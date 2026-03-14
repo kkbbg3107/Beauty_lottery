@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微依美精品醫美診所 - 抽獎</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="inner-page">
+    <div class="inner-page-container">
+        <!-- 返回按鈕 -->
+        <button class="back-btn-inner" onclick="location.href='index.html'">← 返回</button>
+
+        <!-- 重置按鈕 -->
+        <button class="reset-btn-inner" onclick="resetCurrentLottery()">重置本資格</button>
+
+        <!-- 主要內容區 -->
+        <div class="content-wrapper">
+            <!-- 左側：獎品展示區 -->
+            <div class="prize-section">
+                <div class="prize-display" id="prizeDisplay">
+                    <!-- 抽獎動畫或結果顯示 -->
+                </div>
+            </div>
+
+            <!-- 右側：設定區 -->
+            <div class="settings-section">
+                <div class="setting-item">
+                    <h3 class="setting-label">品牌</h3>
+                    <div class="setting-value brand-name">微依美</div>
+                </div>
+
+                <div class="setting-item">
+                    <h3 class="setting-label">資格</h3>
+                    <select id="qualification" class="setting-value">
+                        <option value="all">全部人的抽獎</option>
+                        <option value="1year">1年以上的抽獎</option>
+                        <option value="3year">3年以上的抽獎</option>
+                    </select>
+                </div>
+
+                <div class="setting-item">
+                    <h3 class="setting-label">獎品</h3>
+                    <div id="prizeDisplayText" class="setting-value" style="display: block; cursor: pointer;" onclick="expandPrizeList()">
+                        點擊選擇獎品
+                    </div>
+                    <select id="prizeSelect" class="setting-value" size="5" style="display: none;" onchange="handlePrizeSelection()">
+                        <!-- 動態生成獎品選項 -->
+                    </select>
+                </div>
+
+                <!-- 加碼獎區域（僅在全部人抽獎時顯示） -->
+                <div class="setting-item" id="customPrizeSection" style="display: none;">
+                    <h3 class="setting-label">加碼獎</h3>
+                    <input type="text" id="customPrizeName" class="setting-value" placeholder="獎品名稱" style="margin-bottom: 10px;">
+                    <input type="number" id="customPrizeQuantity" class="setting-value" placeholder="數量" min="1" style="margin-bottom: 10px;">
+                    <button class="btn-primary" onclick="addCustomPrize()" style="width: 100%;">確認加碼</button>
+                </div>
+
+                <!-- 開始抽獎按鈕 -->
+                <button class="btn-draw-lottery" onclick="startLottery()" id="drawButton" disabled>開始抽獎</button>
+            </div>
+        </div>
+
+        <!-- 抽獎名單區 -->
+        <div class="names-section">
+            <h3 class="names-title">抽獎名單：</h3>
+            <div class="names-display" id="namesDisplay">
+                <!-- 顯示抽獎結果 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="prizes-data.js"></script>
+    <script src="lottery.js"></script>
+    <script>
+        const BRAND_KEY = 'weilai-beauty';
+        initLottery(BRAND_KEY);
+    </script>
+</body>
+</html>
