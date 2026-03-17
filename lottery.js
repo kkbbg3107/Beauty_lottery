@@ -97,8 +97,8 @@ function updatePrizeOptions() {
         }
     });
 
-    // 添加自定義加碼獎（僅在 'all' 資格時）
-    if (currentQualification === 'all') {
+    // 添加自定義加碼獎（在 'all' 和 '1year' 資格時）
+    if (currentQualification === 'all' || currentQualification === '1year') {
         const customPrizeList = customPrizes[winnerKey] || [];
         customPrizeList.forEach((customPrize, index) => {
             const drawnCount = alreadyDrawn.filter(p => p === customPrize.name).length;
@@ -541,8 +541,8 @@ function updateCustomPrizeSection() {
     const customPrizeSection = document.getElementById('customPrizeSection');
     if (!customPrizeSection) return;
 
-    // 只在「全部人抽獎」時顯示
-    if (currentQualification === 'all') {
+    // 在「全部人抽獎」和「1年以上抽獎」時顯示
+    if (currentQualification === 'all' || currentQualification === '1year') {
         customPrizeSection.style.display = 'block';
     } else {
         customPrizeSection.style.display = 'none';

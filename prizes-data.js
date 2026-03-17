@@ -70,7 +70,10 @@ const EMPLOYEES_DATA = {
         { name: '林映燁 Chloe', department: '行銷', all: true, '1year': false, '3year': false },
         { name: '范馨文 Luna', department: '行銷', all: true, '1year': false, '3year': false },
         { name: '溫文菱 Tiffany', department: '行銷', all: true, '1year': false, '3year': false },
-        { name: '陳芊妤 Qian', department: '行銷', all: true, '1year': false, '3year': false }
+        { name: '陳芊妤 Qian', department: '行銷', all: true, '1year': false, '3year': false },
+        { name: '林冠宇', department: '竹北', all: true, '1year': false, '3year': false },
+        { name: '陳浩天', department: '竹北', all: true, '1year': false, '3year': false },
+        { name: '陳柏誠', department: '竹北', all: true, '1year': false, '3year': false }
     ],
     'skin-bar': [
         { name: '林欣儀 Mumu', department: '1.文中店', all: true, '1year': true},
@@ -82,7 +85,7 @@ const EMPLOYEES_DATA = {
         { name: '李恬葳 Vivi', department: '2.環西店', all: true, '1year': false },
         { name: '李瑜庭 Vicky', department: '2.環西店', all: true, '1year': false },
         { name: '邱雨薇 Vivian', department: '2.環西店', all: true, '1year': false },
-        { name: '粘維新 Bella', department: '2.環西店', all: true, '1year': false },
+        { name: '粘維欣 Bella', department: '2.環西店', all: true, '1year': false },
         { name: '簡筱芸 Jenny', department: '3.八德店', all: true, '1year': true },
         { name: '盧宥妏 BoBo', department: '3.八德店', all: true, '1year': true },
         { name: '柯莎莉 Sally', department: '3.八德店', all: true, '1year': true },
@@ -90,7 +93,6 @@ const EMPLOYEES_DATA = {
         { name: '陳玟伶 Anna', department: '4.華江店', all: true, '1year': true },
         { name: '王麗玟 Wen', department: '4.華江店', all: true, '1year': true },
         { name: '陳沛琪 Hana', department: '4.華江店', all: true, '1year': true },
-        { name: '陳采翎 Ling', department: '4.華江店', all: true, '1year': false },
         { name: '鄭羽真 Lucida', department: '5.一中店', all: true, '1year': false },
         { name: '黃品臻 Bella', department: '5.一中店', all: true, '1year': false },
         { name: '徐秀琳 Wendy', department: '5.一中店', all: true, '1year': true },
@@ -101,13 +103,11 @@ const EMPLOYEES_DATA = {
         { name: '潘瑞真 Jenny', department: '6.關新店', all: true, '1year': false },
         { name: '張娟娟 Jessie', department: '6.關新店', all: true, '1year': true },
         { name: '邱涵 Hana', department: '7.逢甲店', all: true, '1year': true },
-        { name: '黃昱寧 Mao', department: '7.逢甲店', all: true, '1year': true },
-        { name: '趙小淇 Nana', department: '7.逢甲店', all: true, '1year': false },
+        { name: '黃昱寧 Mag', department: '7.逢甲店', all: true, '1year': true },
         { name: '陳鈺惠 Joyce', department: '8.小檜溪店', all: true, '1year': true },
         { name: '吳玉梅 Aimee', department: '8.小檜溪店', all: true, '1year': true },
         { name: '黃筱錞 Eva', department: '8.小檜溪店', all: true, '1year': false },
         { name: '林芮羽 Serene', department: '8.小檜溪店', all: true, '1year': false },
-        { name: '游雨喬 Joe', department: '8.小檜溪店', all: true, '1year': false },
         { name: '蕭翰萱 Lucy', department: '9.南雅店', all: true, '1year': false },
         { name: '簡若軒 Shirley', department: '9.南雅店', all: true, '1year': false },
         { name: '李妍伊 Lena', department: '9.南雅店', all: true, '1year': false },
@@ -117,24 +117,17 @@ const EMPLOYEES_DATA = {
         { name: '王姵涵 Zoyna', department: '10.北屯好市多店', all: true, '1year': false },
         { name: '陳湘玲 Lara', department: '11.巨蛋店', all: true, '1year': true },
         { name: '林涵雯 Doris', department: '11.巨蛋店', all: true, '1year': false },
-        { name: '林姵馨 Iriru', department: '11.巨蛋店', all: true, '1year': false },
         { name: '陳妍君 sally', department: '11.巨蛋店', all: true, '1year': false },
-        { name: '王語絃 Shine', department: '12.中和店', all: true, '1year': false },
+        { name: '王語絃 Shine', department: '12.中和店', all: true, '1year': true },
         { name: '吳蕙亭 Claire', department: '12.中和店', all: true, '1year': false },
         { name: '蔡詠安 Joanne', department: '13.中山花博店', all: true, '1year': false },
         { name: '邱音棋 Daisy', department: '13.中山花博店', all: true, '1year': false },
         { name: '許茹喻 Judy', department: '13.中山花博店', all: true, '1year': false },
-        { name: '杜依純 Coco', department: '13.中山花博店', all: true, '1year': false },
         { name: '許若綺 Noki', department: '14.南屯向上', all: true, '1year': false },
         { name: '游書華 Eunice', department: '14.南屯向上', all: true, '1year': false },
-        { name: '陳品君 Cherry', department: '14.南屯向上', all: true, '1year': false },
         { name: '陳美珊 Mia', department: '15.小碧潭', all: true, '1year': false },
-        { name: '董俐伶 Lili', department: '15.小碧潭', all: true, '1year': false },
-        { name: '高婉菁 Ellie', department: '15.小碧潭', all: true, '1year': false },
-        { name: '鄭亦真 Rina', department: '15.小碧潭', all: true, '1year': false },
         { name: '顏如妙 Nina', department: '16.林口店', all: true, '1year': true },
         { name: '吳沛娟 Lala', department: '16.林口店', all: true, '1year': false },
-        { name: '林安祈', department: '16.林口店', all: true, '1year': false },
         { name: '藍鳳芝 Mina', department: '17.高雄三多區', all: true, '1year': false },
         { name: '蔡志峖 Nina', department: '17.高雄三多區', all: true, '1year': false },
         { name: '林芸臻 Sally', department: '17.高雄三多區', all: true, '1year': false },
@@ -156,47 +149,48 @@ const PRIZES_DATA = {
     // 微e美肌膚管理中心
     'only-beauty': {
         '3year': [
-            { name: '大堂地獄獎', quantity: 2 }
+            { name: '天堂地獄獎', quantity: 2 }
         ],
         '1year': [
             { name: '不老松按摩券', quantity: 2 },
-            { name: '6000新光禮券', quantity: 1 },
-            { name: 'DJI 大疆 OSMO POCKET 3', quantity: 1 },
-            { name: '周大福 1公克黃金金幣', quantity: 1 },
-            { name: 'dyson 戴森 二合一涼暖空氣清淨機', quantity: 1 },
-            { name: '電音雙波*1', quantity: 1 }
+            { name: '$6000新光禮券', quantity: 1 },
+            { name: 'DJI 大疆 POCKET 3', quantity: 1 },
+            { name: '現金10,000', quantity: 1 },
+            { name: 'Dyson 冷暖空氣清淨機', quantity: 1 },
+            { name: '音波800條', quantity: 1 }
         ],
         'all': [
-            { name: '1000現金', quantity: 5 },
-            { name: '黃金奢華黑面膜5入', quantity: 4 },
-            { name: '肉毒12U + 2000獎金', quantity: 3 },
-            { name: '神+B+FIR面膜', quantity: 3 },
-            { name: '煥皮思保養套組', quantity: 3 },
-            { name: '5000現金', quantity: 1 },
-            { name: '精品卡夾', quantity: 1 }
+            { name: '$1,000現金', quantity: 5 },
+            { name: '肉毒12U＋$2,000現金', quantity: 3 },
+            { name: '媄皮思保養套組', quantity: 3 },
+            { name: '膚嘉儞產品套組', quantity: 3 },
+            { name: '$5,000現金', quantity: 1 },
+            { name: 'Another Land 聯名禮盒', quantity: 1 },
+            { name: 'YSL長夾手拿包', quantity: 1 }
         ]
     },
 
     // 微徠美精品醫美診所
     'weilai-beauty': {
         '3year': [
-            { name: '大堂地獄獎', quantity: 2 }
+            { name: '天堂地獄獎', quantity: 2 }
         ],
         '1year': [
             { name: '不老松按摩券', quantity: 2 },
-            { name: '熊貓針*2', quantity: 2 },
-            { name: '一萬新光禮券', quantity: 1 },
-            { name: '水母音響', quantity: 1 },
-            { name: '逆時針*1', quantity: 1 },
-            { name: '音波 800條', quantity: 1 },
-            { name: 'ipad 128GB WiFi版', quantity: 1 },
+            { name: '熊貓針 1cc', quantity: 1 },
+            { name: '$10,000 新光禮券', quantity: 1 },
+            { name: 'Harman 水母喇叭音響', quantity: 1 },
+            { name: '逆時彈力澎澎針', quantity: 1 },
+            { name: '音波 800條', quantity: 2 },
+            { name: 'iPad 一台', quantity: 1 },
         ],
         'all': [
-            { name: '1000現金', quantity: 5 },
-            { name: '黃金奢華黑面膜5入', quantity: 3 },
-            { name: '神+B+FIR面膜', quantity: 3 },
-            { name: '肉毒12U + 2000獎金', quantity: 3 },
-            { name: '5000現金', quantity: 1 },
+            { name: '$1,000現金', quantity: 5 },
+            { name: '黃金奢華黑面膜', quantity: 3 },
+            { name: '膚嘉儞產品套組', quantity: 3 },
+            { name: '肉毒12U＋$2,000現金', quantity: 3 },
+            { name: '$5,000現金', quantity: 1 },
+            { name: 'Another Land 聯名禮盒', quantity: 1 },
             { name: 'AirPods Pro 3', quantity: 1 },
         ]
     },
@@ -204,16 +198,20 @@ const PRIZES_DATA = {
     // 淨膚寶 (Skin Bar)
     'skin-bar': {
         '1year': [
-            { name: '大堂地獄獎', quantity: 2 }
+            { name: '天堂地獄獎', quantity: 2 },
+            { name: '$5,000現金', quantity: 1 }
         ],
         'all': [
             { name: '不老松按摩券', quantity: 7 },
-            { name: '面膜二入組', quantity: 5 },
-            { name: '1000現金', quantity: 5 },
-            { name: '2000現金', quantity: 3 },
+            { name: '膚嘉儞產品套組', quantity: 3 },
+            { name: '$1,000現金', quantity: 5 },
+            { name: '$2,000現金', quantity: 3 },
             { name: 'Apple Watch SE 3', quantity: 1 },
-            { name: 'Abby加碼-1500現金', quantity: 10 },
-            { name: 'Kelly加碼-1500現金', quantity: 10 }
+            { name: 'Another Land 聯名禮盒', quantity: 1 },
+            { name: '黃金奢華黑面膜', quantity: 4 },
+            { name: '$1,500現金-Abby加碼', quantity: 10 },
+            { name: '$1,500現金-Kelly加碼', quantity: 10 },
+            { name: '$1,500現金-明陽哥加碼', quantity: 20 }
         ]
     }
 };
